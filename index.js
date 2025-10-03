@@ -49,7 +49,7 @@
     const nums = new Set([1, 2, 3, 4]);
 
     const iterator = nums.values(); // return an iterable data
-    console.log(iterator); // {a, b, c, d}
+    console.log(iterator); // {1, 2, 3 4}
 
     let sum = 0;
 
@@ -282,7 +282,7 @@ Write a function that returns the intersection of two Sets (common elements).
 Create a function that returns elements in Set A that are not in Set B.
 */
 
-    // function setIntersect(set1, set2) {
+    // function setDifference(set1, set2) {
     //     const final = set1.difference(set2);
     //     return final;
     // }
@@ -290,14 +290,14 @@ Create a function that returns elements in Set A that are not in Set B.
     // const firstSet = new Set([1, 2, 3, 4, 5]);
     // const secondSet = new Set([1, 2, 3, 4, 6]);
 
-    // console.log(setIntersect(firstSet, secondSet));
+    // console.log(setDifference(firstSet, secondSet));
 
 /*
 7. Check if Subset
 Write a function to check if one Set is a subset of another Set.
 */
 
-    // function setIntersect(set1, set2) {
+    // function subsetChecker(set1, set2) {
     //     const final = set1.isSubsetOf(set2);
     //     return final;
     // }
@@ -305,7 +305,7 @@ Write a function to check if one Set is a subset of another Set.
     // const firstSet = new Set([1, 2, 3, 4, 5]);
     // const secondSet = new Set([1, 2, 3, 4, 5, 6]);
 
-    // console.log(setIntersect(firstSet, secondSet));
+    // console.log(subsetChecker(firstSet, secondSet));
 
 /*
 8. Find First Unique Character
@@ -313,30 +313,26 @@ Given a string, find the first character that appears only once.
 */
 
     // function firstUniqueChar(str) {
-    //     const chars = new Set(str);
+    //     const strArr = str.split('');
+    //     const uniqueChars = [];
 
-    //     for (let char of str) {
-    //         let count = 0;
-    //         for (let c of str) {
-    //             if (c == char) {
-    //                 count++;
-    //             }
+    //     for (const char of strArr) {
+    //         if (!uniqueChars.includes(char)) {
+    //             uniqueChars.push(char);
     //         }
-    //         if (count == 1) {
-    //             return char;
-    //         }
-    //     }
-    //     return `No letter appeared once only`;
+    //     }    
+        
+    //     return uniqueChars[0];
     // }
-
-    // console.log(firstUniqueChar("SKaye"));         
+      
+    // console.log(firstUniqueChar('kirk'));
     
 /*
 9. Symmetric Difference
 Find elements that are in either Set A or Set B, but not in both.
 */
 
-    // function setIntersect(set1, set2) {
+    // function setDifferenceChecker(set1, set2) {
     //     const final = set1.symmetricDifference(set2);
     //     return final;
     // }
@@ -344,7 +340,7 @@ Find elements that are in either Set A or Set B, but not in both.
     // const firstSet = new Set([1, 2, 3, 4, 5]);
     // const secondSet = new Set([1, 2, 3, 4, 6]);
 
-    // console.log(setIntersect(firstSet, secondSet));
+    // console.log(setDifferenceChecker(firstSet, secondSet));
 
 /*
 10. Find Duplicates in Array
@@ -381,7 +377,7 @@ Return all elements that appear more than once in an array.
 Determine if two arrays have no common elements.
 */
 
-    // function setIntersect(set1, set2) {
+    // function setIsDisjointChecker(set1, set2) {
     //     const final = set1.isDisjointFrom(set2);
     //     return final;
     // }
@@ -389,7 +385,7 @@ Determine if two arrays have no common elements.
     // const firstSet = new Set([1, 2, 3, 4, 5]);
     // const secondSet = new Set(['a', 'b', 'c']);
 
-    // console.log(setIntersect(firstSet, secondSet));
+    // console.log(setIsDisjointChecker(firstSet, secondSet));
 
 /*
 12. Convert Set to Sorted Array
