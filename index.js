@@ -196,21 +196,21 @@
 Write a function that takes an array and returns a new array with all duplicates removed.
 */
 
-function duplicateRemover(array) {
-    const set = new Set();
-    const result = [];
-    for (let i = 0; i < array.length; i++) {
-        set.add(array[i]);
-    }
+// function duplicateRemover(array) {
+//     const set = new Set();
+//     const result = [];
+//     for (let i = 0; i < array.length; i++) {
+//         set.add(array[i]);
+//     }
     
-    for (const value of set.values()) {
-        result.push(value);
-    }
+//     for (const value of set.values()) {
+//         result.push(value);
+//     }
     
-    return result;
-}
+//     return result;
+// }
 
-console.log(duplicateRemover([1, 2, 2, 3, 4, 4, 5]));
+// console.log(duplicateRemover([1, 2, 2, 3, 4, 4, 5]));
 
 /*
 2. 2. Check if Value Exists
@@ -219,13 +219,13 @@ Create a function that checks if a specific value exists in a Set.
 
 // Given Set: {1, 2, 3, 4, 5}
 
-function checker (value) {
-    const set1 = new Set([1, 2, 3, 4, 5]);
+// function checker (value) {
+//     const set1 = new Set([1, 2, 3, 4, 5]);
 
-    return set1.has(value);
-}
+//     return set1.has(value);
+// }
 
-console.log(checker(1));
+// console.log(checker(1));
 
 
 /*
@@ -233,79 +233,227 @@ console.log(checker(1));
 Write a function that counts the number of unique characters in a string.
 */
 
-function uniqueChars(string) {
-    const set2 = new Set();
-    
-    for (const char in string) {
-        set2.add(string[char])
-    }
+    // function uniqueChars(string) {
+    //     const set2 = new Set();
+        
+    //     for (const char in string) {
+    //         set2.add(string[char])
+    //     }
 
-    return `\'${string}\' has ${set2.size} unique characters`;
-    
-}
-console.log(uniqueChars('Hello'));
+    //     return `\'${string}\' has ${set2.size} unique characters`;
+        
+    // }
+    // console.log(uniqueChars('Hello'));
 
 /*
 4. Union of Two Sets
 Create a function that returns the union of two Sets (all elements from both Sets).
 */
 
-function setsUnited (set1, set2) {
-    const finalSet = set1.union(set2);
-    return finalSet;
-}
+    // function setsUnited (set1, set2) {
+    //     const finalSet = set1.union(set2);
+    //     return finalSet;
+    // }
 
-const set3 = new Set([1, 3, 5, 7]);
-const set4 = new Set([2, 4, 6, 8]);
+    // const set3 = new Set([1, 3, 5, 7]);
+    // const set4 = new Set([2, 4, 6, 8]);
 
-console.log(setsUnited(set3,set4));
+    // console.log(setsUnited(set3,set4));
+
+/*--------------------------------------------------------------------------------------------------------------------------*/
 
 /*
 5. Intersection of Two Sets
 Write a function that returns the intersection of two Sets (common elements).
 */
 
+    // function setIntersect(set1, set2) {
+    //     const final = set1.intersection(set2);
+    //     return final;
+    // }
+
+    // const firstSet = new Set([1, 2, 3, 4, 5]);
+    // const secondSet = new Set([1, 2, 3, 4, 6]);
+
+    // console.log(setIntersect(firstSet, secondSet));
+
 /*
 6. Difference of Two Sets
 Create a function that returns elements in Set A that are not in Set B.
 */
+
+    // function setIntersect(set1, set2) {
+    //     const final = set1.difference(set2);
+    //     return final;
+    // }
+
+    // const firstSet = new Set([1, 2, 3, 4, 5]);
+    // const secondSet = new Set([1, 2, 3, 4, 6]);
+
+    // console.log(setIntersect(firstSet, secondSet));
 
 /*
 7. Check if Subset
 Write a function to check if one Set is a subset of another Set.
 */
 
+    // function setIntersect(set1, set2) {
+    //     const final = set1.isSubsetOf(set2);
+    //     return final;
+    // }
+
+    // const firstSet = new Set([1, 2, 3, 4, 5]);
+    // const secondSet = new Set([1, 2, 3, 4, 5, 6]);
+
+    // console.log(setIntersect(firstSet, secondSet));
+
 /*
 8. Find First Unique Character
 Given a string, find the first character that appears only once.
 */
 
+    // function firstUniqueChar(str) {
+    //     const chars = new Set(str);
+
+    //     for (let char of str) {
+    //         let count = 0;
+    //         for (let c of str) {
+    //             if (c == char) {
+    //                 count++;
+    //             }
+    //         }
+    //         if (count == 1) {
+    //             return char;
+    //         }
+    //     }
+    //     return `No letter appeared once only`;
+    // }
+
+    // console.log(firstUniqueChar("SKaye"));         
+    
 /*
 9. Symmetric Difference
 Find elements that are in either Set A or Set B, but not in both.
 */
 
+    // function setIntersect(set1, set2) {
+    //     const final = set1.symmetricDifference(set2);
+    //     return final;
+    // }
+
+    // const firstSet = new Set([1, 2, 3, 4, 5]);
+    // const secondSet = new Set([1, 2, 3, 4, 6]);
+
+    // console.log(setIntersect(firstSet, secondSet));
+
 /*
 10. Find Duplicates in Array
 Return all elements that appear more than once in an array.
 */
+    
+    // function findDuplicates(arr) {
+    //     const duplicates = [];
+
+    //     for (let num of arr) {
+    //         let count = 0;
+
+    //         for (let n of arr) {
+    //             if (n == num) {
+    //                 count++;
+    //             }
+    //         }
+
+    //         if (count > 1 && !duplicates.includes(num)) {
+    //             duplicates.push(num);
+    //         }
+    //     }
+
+    //     if (duplicates.length == 0) {
+    //         return "No duplicates found";
+    //     }
+    //     return duplicates;
+    // }
+
+    // console.log(findDuplicates([1, 2, 3, 2, 4, 5, 1, 6]));
 
 /*
 11. Check if Arrays are Disjoint
 Determine if two arrays have no common elements.
 */
 
+    // function setIntersect(set1, set2) {
+    //     const final = set1.isDisjointFrom(set2);
+    //     return final;
+    // }
+
+    // const firstSet = new Set([1, 2, 3, 4, 5]);
+    // const secondSet = new Set(['a', 'b', 'c']);
+
+    // console.log(setIntersect(firstSet, secondSet));
+
 /*
 12. Convert Set to Sorted Array
 Create a function that converts a Set to a sorted array.
 */
+
+    // function setToSortedArray(set) {
+    // const arr = [];
+
+    // for (let value of set) {
+    //     arr.push(value);
+    // }
+
+    // arr.sort((a, b) => a - b);
+
+    // return arr;
+    // }
+
+    // console.log(setToSortedArray(new Set([5, 3, 8, 1, 2])));
 
 /*
 13. Find Missing Numbers
 Given an array of numbers from 1 to n with some missing, find all missing numbers.
 */
 
+    // function findMissingNumbers(arr, n) {
+    //     const set = new Set(arr);
+    //     const missing = [];
+
+    //     for (let i = 1; i <= n; i++) {
+    //         if (!set.has(i)) {
+    //             missing.push(i);
+    //         }
+    //     }
+
+    //     if (missing.length == 0) {
+    //         return "No missing numbers";
+    //     }
+    //     return missing;
+    // }
+
+    // console.log(findMissingNumbers([1, 2, 6], 7)); 
+
 /*
 14. Remove Vowels Tracking Uniqueness
 Remove all vowels from a string and count unique consonants.
 */
+
+    // function removeVowelsAndCount(str) {
+    //     const vowels = "aeiouAEIOU";
+    //     let result = "";
+    //     const uniqueConsonants = new Set();
+
+    //     for (let char of str) {
+    //         if (!vowels.includes(char)) {
+    //             result += char;
+    //             uniqueConsonants.add(char.toLowerCase());
+    //         }
+    //     }
+
+    //     return {
+    //         noVowels: result,
+    //         uniqueCount: uniqueConsonants.size
+    //     };
+    // }
+
+    // console.log(removeVowelsAndCount("Programming")); 
